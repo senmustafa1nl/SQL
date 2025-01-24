@@ -35,24 +35,30 @@ Projede yer alan SQL sorguları aşağıda sıralanmıştır:
    from film;
 Bu sorgu, film tablosundaki tüm filmlerin başlık ve açıklamalarını getirir.
 Film Uzunluğu 60 ile 75 Dakika Arasında Olanlar:
+ ```sql
+
 -- Film tablosundan uzunluğu 60 ile 75 dakika arasında olan filmleri seçiyoruz
+ 
 select *
 from film
 where length > 60 AND length < 75;
 Bu sorgu, film uzunluğu 60 ile 75 dakika arasında olan filmleri listelemek için kullanılır.
 Kiralama Ücreti 0.99 ve Yenileme Maliyeti 12.99 veya 28.99 Olan Filmler:
+ ```sql
 -- Rental rate (kiralama ücreti) 0.99 ve replacement cost (yenileme maliyeti) ya 12.99 ya da 28.99 olan filmleri seçiyoruz
 select *
 from film
 where rental_rate = 0.99 and (replacement_cost = 12.99 or replacement_cost = 28.99);
 Bu sorgu, kiralama ücreti 0.99 ve yenileme maliyeti ya 12.99 ya da 28.99 olan filmleri listeleyecektir.
 Adı 'Mary' Olan Müşteriler:
+ ```sql
 -- Customer tablosundan adı 'Mary' olan tüm müşterileri seçiyoruz
 select *
 from customer
 where first_name = 'Mary';
 Bu sorgu, customer tablosundan adı "Mary" olan tüm müşteri bilgilerini getirir.
 Belirli Kiralama Ücretleri ve Film Uzunluğu Koşullarını Tersine Çevirmek:
+ ```sql
 -- Length (uzunluk) 50'den fazla olmayan ve rental_rate (kiralama ücreti) ya 2.99 ya da 4.99 olmayan filmleri seçiyoruz
 select *
 from film
@@ -73,7 +79,7 @@ Veritabanı Yönetim Sistemi: MySQL, PostgreSQL veya herhangi bir SQL uyumlu sis
 SQL Bilgisi: Temel SQL sorguları ve filtreleme işlemleri hakkında bilgi sahibi olmak.
 Yazar
 
-[Adınızı Buraya Ekleyin]
+
 
 
 ---
